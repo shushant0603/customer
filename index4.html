@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #c6ebc5;
+
+        position: relative;
+      overflow-x: hidden;
+      }
+
+      .swiper {
+        width: 1000px;
+        height: 430px;
+        position: relative;
+        border-radius: 15px;
+        
+      }
+
+      .swiper-slide {
+        /* text-align: center; */
+        /* font-size: 18px; */
+        background: #fefded;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        border-radius: 10px;
+      }
+
+      .swiper-slide .face {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        width: 440px;
+        height: 290px;
+      }
+      .swiper-slide .line {
+        position: absolute;
+        top: 60px;
+        left: 500px;
+        height: 270px;
+      }
+      .content h2 {
+        position: absolute;
+        top: 19px;
+        left: 550px;
+        letter-spacing: normal;
+        font-family: "montserrat", sans-serif;
+        font-size: 30px;
+        line-height: 2;
+        font-weight: 600;
+        line-height: 1.8;
+        width: 484px;
+      }
+      .content p {
+        position: absolute;
+        top: 95px;
+        left: 550px;
+        font-family: "lato", sans-serif;
+        font-size: 14px;
+        /* line-height: 1;  */
+        font-weight: 5px;
+        line-height: 1.5;
+        width: 400px;
+      }
+      .content h1 {
+        position: absolute;
+        top: 270px;
+        left: 550px;
+        font-family: "lato", sans-serif;
+        font-size: 20px;
+        /* line-height: 1;  */
+        font-weight: 700;
+        letter-spacing: normal;
+      }
+      .content .star {
+        position: absolute;
+        top: 279px;
+        left: 675px;
+      }
+      .content.star span {
+        left: 350px;
+        font-weight: 500;
+      }
+      .content h3 {
+        position: absolute;
+        top: 295px;
+        left: 555px;
+        font-family: "lato", sans-serif;
+        font-size: 12px;
+        /* line-height: 1;  */
+        font-weight: 400;
+        letter-spacing: normal;
+      }
+
+      /*  styleing krna suru krte hai   */
+
+
+
+       .design .square-up{
+        position: absolute;
+        top: 97px;
+         right: 70px; 
+       }
+       .design .square-Down{
+        position: absolute;
+        top: 170px;
+        right:43px;
+         /* left: 10px;  */
+         /* right: 2000px; */
+       }
+
+       .design .cross-up{
+        position: absolute;
+        top: 145px;
+        left: 92px;
+       }
+       .design .cross-down{
+        position: absolute;
+        top: 500px;
+        right: 91px;
+       }
+      /* Pagination styles */
+      .swiper-pagination {
+        position: absolute;
+        transform: translateY(-30px);
+        /* Adjust this value to move the buttons up */
+        width: 100%;
+        text-align: center;
+      }
+
+      .swiper-pagination .swiper-pagination-bullet {
+        width: 20px; /* Adjust width of rectangle */
+        height: 10px; /* Adjust height of rectangle */
+        display: inline-block;
+        background-color: #504d4d; /* Default dot color */
+        border-radius: 5px; /* Border radius for rectangle */
+        margin: 0 5px;
+        cursor: pointer;
+      }
+
+      .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: #dc2e2d; /* Active dot color */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+     <div class="design">
+      <div class="cross-up">
+        <img src="Vector (2).png" alt="">
+           </div>
+     </div>
+   
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div><img src="Rectangle 74.png" alt="" class="face" /></div>
+          <div><img src="Line 6.png" alt="" class="line" /></div>
+          <div class="content">
+            <h2>What customers says</h2>
+            <p>
+              Zomato is the best. Besides the delicious meals, the service is
+              also very good, especially in the very fast fast delivery. I
+              highly recommend Zomato to you.
+            </p>
+            <h1>Talha Anjum</h1>
+            <h3>Food Enthusiast</h3>
+            <p class="star">⭐⭐⭐⭐⭐<span>5.0</span></p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div><img src="Rectangle 74.png" alt="" class="face" /></div>
+          <div><img src="Line 6.svg" alt="" class="line" /></div>
+          <div class="content">
+            <h2>What costomer says</h2>
+            <p>
+              Zomato is the best. Besides the delicious meals, the service is
+              also very good, especially in the very fast fast delivery. I
+              highly recommend Zomato to you.
+            </p>
+            <h1>Talha Anjum</h1>
+            <h3>Food Enthusiast</h3>
+            <p class="star">⭐⭐⭐⭐⭐<span>5.0</span></p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div><img src="Rectangle 74.png" alt="" class="face" /></div>
+          <div><img src="Line 6.png" alt="" class="line" /></div>
+          <div class="content">
+            <h2>What costomer says</h2>
+            <p>
+              Zomato is the best. Besides the delicious meals, the service is
+              also very good, especially in the very fast fast delivery. I
+              highly recommend Zomato to you.
+            </p>
+            <h1>Talha Anjum</h1>
+            <h3>Food Enthusiast</h3>
+            <p class="star">⭐⭐⭐⭐⭐<span>5.0</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="design">
+      <div class="square-up">
+        <img src="Rectangle 78 (1).png" alt="" />
+      </div>
+      <div class="square-Down">
+        <img src="Rectangle 78 (1).png" alt="" />
+      </div>
+      <div class="cross-down">
+        <img src="Vector (2).png" alt="">
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
